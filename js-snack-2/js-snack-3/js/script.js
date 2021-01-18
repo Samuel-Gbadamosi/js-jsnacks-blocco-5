@@ -56,8 +56,9 @@ var zucchina = [
 ];
 
 var shortZucca =[];
-
+var longZucca = [];
 var kgOne = 0;
+var kgTwo = 0;
 
 for (var i = 0; i < zucchina.length; i++) {
   // console.log(zucchina[i]);
@@ -65,8 +66,13 @@ for (var i = 0; i < zucchina.length; i++) {
     shortZucca.push(zucchina[i]);
     kgOne += zucchina[i].peso;
 
+  } else {
+    longZucca.push(zucchina[i]);
+    kgTwo += zucchina[i].peso
   }
 }
 
 console.log(shortZucca);
 console.log(` the total  kg of shortzucca is ${kgOne}`);
+console.log(longZucca);
+console.log(` the total  kg of longZucca is ${kgTwo}`);
